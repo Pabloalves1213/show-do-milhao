@@ -1,0 +1,36 @@
+         
+ .body  { 
+     background: #001e40;
+ }
+ 
+
+ .logo {
+     width: 300px;
+     margin: 5px;
+     padding: 0;
+     height: 150px;
+
+ }
+
+ .button {
+     justify-content: center;
+ }
+
+ * {
+     margin: 0;
+     padding: 0%;
+     font-family: "poppins", sans-serif;
+     box-sizing: border-box;
+ }
+
+ body {
+     background: #001e4d;
+ }
+
+ .app {
+     background-color: #FFFF;
+     width: 900px;
+     max-width: 600px;
+     margin: 100px auto 0;
+     padding: 30px;
+ }
