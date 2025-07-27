@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>perguntas</title>
     <link rel="stylesheet" href="styles.css">
-    <img src="img/logo do jogo.png" class="logo"> 
+    <img src="" class="logo">
 </head>
 
-<body> 
+<body>
     <div class="app">
-    
-    <h1>Pergunta</h1>
-    <h2 id="Pergunta">Pergunta</h2>
-    <div id="answer=buttons">
-        <button class="btn">Alternativa 1</button>
-        <button class="btn">Alternativa 2</button>
-        <button class="btn">Alternativa 3</button>
-        <button class="btn">Alternativa 4</button>
-    </div>
-    <button id="cartas"> Cartas</button>
-    <button id="Universaritarios">Pergunta aos Universaritarios</button>
-    <button id="Parar"> Parar </button>
-    </div>
-</body>
+        <h1>quiz</h1>
+        <div class="quiz">
+            <h2 id="question">Question goes here</h2>
+            <div id="answer=buttons">
+                <button class="btn"> (A) answer1</button>
+                <button class="btn"> (B) answer2</button>
+                <button class="btn"> (C) answer3</button>
+                <button class="btn"> (D) answer4</button>
+            </div>
+            <button id="next-btn"> next</button>
+            <button id="pular-btn">pular &#x1F449</button>
+            <button id="ajuda-btn">Ver ajuda &#x1F9E0</button>
+        </div>
 
+    </div>
+    <button onclick="quiz()">quiz</button>
+</body>
+<script src="script.js"></script>
 </html>

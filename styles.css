@@ -1,36 +1,91 @@
-         
- .body  { 
-     background: #001e40;
- }
- 
+* {
+    margin: 0;
+    padding: 50;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
 
- .logo {
-     width: 300px;
-     margin: 5px;
-     padding: 0;
-     height: 150px;
+body {
+    background-color: #001e4d;
+}
 
- }
+.app {
+    background: blue;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 100px;
+}
 
- .button {
-     justify-content: center;
- }
+.app h1 {
+    font-weight: 25px;
+    color: black;
+    font-weight: 600;
+    padding: 30px 0;
+}
 
- * {
-     margin: 0;
-     padding: 0%;
-     font-family: "poppins", sans-serif;
-     box-sizing: border-box;
- }
+.quiz h2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
 
- body {
-     background: #001e4d;
- }
+.btn {
+    background: red;
+    color: #fff;
+    font-weight: 1000;
+    width: 50%;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 0px 10px 10px 10px;
+    cursor: pointer;
+    transition: ali 0.3s;
+}
 
- .app {
-     background-color: #FFFF;
-     width: 900px;
-     max-width: 600px;
-     margin: 100px auto 0;
-     padding: 30px;
- }
+.btn:hover:not([disabled]) {
+    background: yellow;
+    color: black;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: black;
+    color: #fff;
+    font-weight: 500;
+    width: 100px;
+    border: 0;
+    padding: 10px;
+    margin: 0px auto 0;
+    border-radius: 0 0 0 10px;
+    cursor: pointer;
+    
+}
+
+#pular-btn {
+    background: black;
+    color: #fff;
+    font-weight: 500;
+    width: 90px;
+    border: 0;
+    padding: 10px;
+    margin: 10px auto 0;
+    border-radius: 0 0 0 10px;
+    cursor: pointer;
+}
+
+#ajuda-btn {
+    background: black;
+    color: #fff;
+    font-weight: 500;
+    width: 100px;
+    border: 0;
+    padding: 10px;
+    margin: 10px auto 0;
+    border-radius: 0 0 0 10px;
+    cursor: pointer;
+}
