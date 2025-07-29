@@ -3,6 +3,7 @@
     padding: 50;
     font-family: "poppins", sans-serif;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -14,15 +15,25 @@ body {
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
-    padding: 100px;
+    padding: 150px;
+
+
 }
 
+
+
 .app h1 {
+    /*texto de indroduçao*/
     font-weight: 25px;
     color: black;
     font-weight: 600;
     padding: 30px 0;
+    text-align: center;
+
 }
+
+;
+
 
 .quiz h2 {
     font-size: 18px;
@@ -31,22 +42,24 @@ body {
 }
 
 .btn {
-    background: red;
-    color: #fff;
+    background:rgb(9, 9, 54);
+    color:white;
     font-weight: 1000;
     width: 50%;
     border: 2px solid black;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px;
     text-align: center;
     border-radius: 0px 10px 10px 10px;
     cursor: pointer;
     transition: ali 0.3s;
+    display: block;
 }
 
 .btn:hover:not([disabled]) {
     background: yellow;
     color: black;
+
 }
 
 .btn:disabled {
@@ -55,7 +68,7 @@ body {
 
 #next-btn {
     background: black;
-    color: #fff;
+    color: white;
     font-weight: 500;
     width: 100px;
     border: 0;
@@ -63,7 +76,7 @@ body {
     margin: 0px auto 0;
     border-radius: 0 0 0 10px;
     cursor: pointer;
-    
+
 }
 
 #pular-btn {
@@ -89,3 +102,9 @@ body {
     border-radius: 0 0 0 10px;
     cursor: pointer;
 }
+.correct{
+background: green;
+color:black;
+}
+.incorrect{
+background:red ;}
