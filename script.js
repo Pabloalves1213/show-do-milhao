@@ -54,7 +54,7 @@ const questions = [
             { id: 3, Text: "49", correct: false },
             { id: 4, Text: "58", correct: false },
         ]
-    },                //pergunta vitor pq a virgula influencia no codigo//
+    },
     {
         question: "Qual dessas palavras é um verbo?",
         answer: [
@@ -141,11 +141,12 @@ function showQuestion() {
         if (isCorrect) {
             selectedBtn.classList.add("correct");
             score++;
-           // alert("🎉Certa reposta✅")// lembra de mudar
+            // alert("🎉Certa reposta✅")// lembra de mudar
         }
         else {
             selectedBtn.classList.add("incorrect");
-           // alert("❌fim do jogo");// lembra de mudar
+            // alert("❌fim do jogo");// lembra de mudar
+            nextButton.disabled=true; //cdg para travar o button proximo se errar a alternativa//
         }
         Array.from(answerButtons.children).forEach((button) => {
             button.disabled = true;  //cdg para evitar que participante click em duas ou mais alternativas//
@@ -187,4 +188,9 @@ startQuiz();
 
 
 //erro pode ser o eventlistener com onclick// observar
+
+//codigo da pagina de incio//
+
+const iniciarjogoElement = document.getElementById("iniciar-jogo");
+const recordesElement = document.getElementById("recordes");
 
