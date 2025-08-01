@@ -1,26 +1,74 @@
+
+
 * {
     margin: 0;
-    padding: 50;
+    padding: 0;
     font-family: "poppins", sans-serif;
     box-sizing: border-box;
-    
+
+}
+.logo {
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+    margin-bottom: 50px;
 }
 
-body {
-    background-color: #001e4d;
+
+.inicio{
+ box-sizing: border-box;
+ margin: 0%;
+ padding: 0%;
+ background-color: rgb(19, 19, 58);
 }
 
+.capa{
+    width: 700px;
+    height: auto;
+    display: block;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+
+
+
+.primeiro {
+    max-width: 100px;
+    margin-left: 600px;
+    display: flex;
+    background-color: yellow;
+    padding: 10px;
+    color: black;
+    font-weight: 1000;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 0px 10px 10px 10px;
+    cursor: pointer;
+    transition: ali 0.3s;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.primeiro:hover{
+ background: green;
+    color: black;
+    transform: scale(1.5 , 1);}
+                    
+                   /* pg de perguntas*/
 .app {
     background: blue;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
     padding: 150px;
+    flex-direction: column;
 
 
 }
-
-
 
 .app h1 {
     /*texto de indroduçao*/
@@ -32,9 +80,6 @@ body {
 
 }
 
-;
-
-
 .quiz h2 {
     font-size: 18px;
     color: #fff;
@@ -42,8 +87,8 @@ body {
 }
 
 .btn {
-    background:rgb(9, 9, 54);
-    color:white;
+    background: rgb(9, 9, 54);
+    color: white;
     font-weight: 1000;
     width: 50%;
     border: 2px solid black;
@@ -54,11 +99,17 @@ body {
     cursor: pointer;
     transition: ali 0.3s;
     display: block;
+
+}
+
+.btn:hover {
+    transform: scale(1, 1);
 }
 
 .btn:hover:not([disabled]) {
     background: yellow;
     color: black;
+    transform: scale(1.2, 1.2);
 
 }
 
@@ -76,10 +127,16 @@ body {
     margin: 0px auto 0;
     border-radius: 0 0 0 10px;
     cursor: pointer;
+}
+
+#next-btn:hover {
+    background: green;
+    color: black;
+    transform: scale(1.2, 1.2);
 
 }
 
-#pular-btn {
+#parar-btn {
     background: black;
     color: #fff;
     font-weight: 500;
@@ -89,6 +146,13 @@ body {
     margin: 10px auto 0;
     border-radius: 0 0 0 10px;
     cursor: pointer;
+}
+
+#parar-btn:hover {
+    background: red;
+    color: black;
+    transform: scale(1.2, 1.2);
+
 }
 
 #ajuda-btn {
@@ -102,9 +166,19 @@ body {
     border-radius: 0 0 0 10px;
     cursor: pointer;
 }
-.correct{
-background: green;
-color:black;
+
+#ajuda-btn:hover {
+    background: #fff;
+    color: black;
+    transform: scale(1, 1);
 }
-.incorrect{
-background:red ;}
+
+.correct {
+    background: green;
+    color: black;
+}
+
+.incorrect {
+ background: red;
+    color: black;
+}
