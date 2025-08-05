@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - Show do Milhão</title>
+  <link rel="stylesheet" href="show.css">
+  <img src="img/logo do jogo.png" class="logo">
+  <button onclick="proximaPergunta()">Próxima &#x27A1</button>
+</head>
+
+<body class="incio">
+
+  <h1 id="pergunta">Pergunta aparecerá aqui</h1>
+
+  <div id="alternativas">
+    <!-- Botões de alternativas vão aqui -->
+  </div>
+
+  <p>Pontuação atual: <strong id="pontos">R$ 0</strong></p>
+
+  <h2 id="valorAtual">Valor atual: R$ 1.000</h2>
+<button onclick="pararJogo()">🛑 Parar</button>
+<div id="mensagemFinal"></div>
+
+
+
+  <button onclick="abrirAjuda()">🆘 Ajuda</button>
+
+  <div id="opcoesAjuda" style="display: none; margin-top: 10px;">
+    <button onclick="pularPergunta()">📤 Pular Pergunta</button>
+    <button onclick="eliminarDuas()">❌ Eliminar 2</button>
+    <button onclick="mostrarDica()">💡 Dica</button>
+  </div>
+
+  <div id="mensagemAjuda"></div>
+
+
+  <script src="show.js"></script>
+  <div id="tabelaPremios">
+
+  </div>
+
+</body>
+
+</html>
